@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+body{
+    background: linear-gradient(to top,#840032,#F42C04,#FCD581);
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+#toDo{
+    max-width: 400px;
+    background-color: #fff;
+    height: 100vh;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px black;
+}
+h1{
+    margin: 0;
+    text-transform: uppercase;
+    background-color: #B20D30;
+    padding: 15px 5px;
+    color: #FCD581;
+    padding: 20px;
+}
+input{
+    width: 85%;
+    height: 35px;
+    font-size: 30px;
+    padding: 25px 15px;
+    border-width: 3px 3px;
+    border-style: solid;
+    border-color: #ccc;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+input:focus{
+    background: #FCD581;
+    border-color: #F49D37;
+    outline: none;
+    color: #F42C04;
+}
+.clear{
+    margin: 10px 45px;
+    background-color: #B20D30;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: inherit;
+    color: #FCD581;
+    bottom: 10px;
+    position: fixed;
+    cursor: pointer;
+}
+.finish{
+    margin: 10px 50px;
+    margin-left: 205px;
+    background-color: #B20D30;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: inherit;
+    color: #FCD581;
+    bottom: 10px;
+    position: fixed;
+    cursor: pointer;
+}
+.add{
+    background-color: #B20D30; 
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    color: #FCD581;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 78px;
+    margin-left: 345px;
+}
+button:hover{
+    background-color: #FCD581;
+    color:  #B20D30;
+}
+.toDos{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 70%;
+    overflow: auto;
+}
+.toDos li{
+    background-color: #B20D30;
+    height: 50px;
+    line-height: 50px;
+    font-size: 19px;
+    cursor: pointer;
+    color: #FCD581;
+    user-select: none;
+}
+.toDos li:nth-child(2n){
+    background-color: #FCD581;
+    color: #B20D30;
+}
+.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+.buttons{
+    /*border-style: solid;
+    border-color: #B20D30;*/
+}
+.toDos img{
+    width: 0px;
+    height: 26px;
+    vertical-align: sub;
+    transition: width 0.3s, opacity 0.5s;
+    opacity: 0;
+    margin: 0 10px;
+}
+.toDos li:hover img{
+    width: 24px;
+    opacity: 1;
+}
+@media (max-width: 450px){
+    #toDo{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
